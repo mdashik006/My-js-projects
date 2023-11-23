@@ -1,0 +1,46 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    margin: 0%;
+    padding: 0%;
+}
+section 
+{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.shutterstock.com%2Fimage-photo%2Fbunch-blurred-scattered-dollars-260nw-357094745.jpg&f=1&nofb=1&ipt=b020b8eb72cc972e49d55ceb1f41b9a92953bdb7a6a96fffbcf9e8e90b169ccd&ipo=images    ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    display: flex;
+    color:dark black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight:bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1
+{
+    font-size: 100px;
+    font-weight:900; 
+    color: rgb(17, 90, 21);
+}
+.hhh
+{
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    color: rgb(17, 90, 21);
+    border: none;
+}
+.hhh:hover
+{
+    background-color: rgb(17, 90, 21);
+    color: aliceblue;
+    border-radius: 10px;
+}
