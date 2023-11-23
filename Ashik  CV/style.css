@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Yellowtail&display=swap');
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Yellowtail", cursive;
+}
+/* navbar */
+.navbar
+{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.name
+{
+    margin-right: auto;
+    left: 20px;
+    padding: 0px 10px;
+    font-size: xx-large;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+    color: rgb(114, 25, 25);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.name::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:transparent ;
+    top: -2px;
+    left: 0;
+    border-bottom: 2px solid rgb(174, 79, 79) ;
+    transform: translateX(-100%);
+    transition: 0.9s;
+
+}
+.name::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:transparent ;
+    top: -2px;
+    left: 0;
+    border-bottom: 2px solid rgb(174, 79, 79);
+    transform: translateX(100%);
+    transition: 0.9s;
+}
+.name:hover::after
+{
+    transform: translateX(0px);
+}
+.name:hover::before
+{
+    transform: translateX(0px);
+}
+.navbar ul
+{
+    margin-right: 50px;
+}
+.navbar ul li
+{
+    list-style-type:none;
+    margin-left: 50px;
+    display:inline;
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: rgb(114, 25, 25);
+}
+.navbar ul li a:hover
+{
+     text-decoration: none;
+    color: rgb(174, 79, 79);
+}
+
+.nav-buttons
+{
+    width: 100px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+.nav-buttons::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:transparent ;
+    top: -2px;
+    left: 0;
+    border-bottom: 2px solid rgb(174, 79, 79) ;
+    transform: translateX(-150px);
+    transition: 0.9s;
+
+}
+.nav-buttons::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:transparent ;
+    top: -2px;
+    left: 0;
+    border-bottom: 2px solid rgb(174, 79, 79);
+    transform: translateX(150px);
+    transition: 0.9s;
+}
+.nav-buttons:hover::after
+{
+    transform: translateX(0px);
+}
+.nav-buttons:hover::before
+{
+    transform: translateX(0px);
+}
+.active
+{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(174, 79, 79);
+
+}
+/* navbar */
+
+/* banner */
+.banner
+{
+    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+    background-image: url("https://wallpaperaccess.com/full/3239480.jpg");
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pd
+{
+    width:75%;
+    height:60vh;
+    background-color: rgb(255, 255, 255);
+}
+.pimg
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+    object-fit:contain;
+}
+.dd
+{
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+}
+.icons
+{
+    width: 100%;
+    height: 100px;
+    margin: 10px 0px;
+    background-color: rgb(114, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-brands,.fa-regular{
+    font-size:32px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.fa-brands:hover
+{
+    color: black;
+    transition: 0s;
+}
+/* banner */
+/* greeting */
+.greet
+{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(217, 209, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gc
+{
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    padding: 100px;
+}
+/* greeting */
