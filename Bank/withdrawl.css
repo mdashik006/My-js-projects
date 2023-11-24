@@ -1,0 +1,35 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+input::placeholder
+{
+    padding: 20px;
+    font-size: large;
+}
+input
+{
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    border-radius: 50px;
+}
+a
+{
+    text-decoration: none;
+    color: aliceblue;
+    cursor:pointer;
+}
+a:hover
+{
+    color: aliceblue;
+}

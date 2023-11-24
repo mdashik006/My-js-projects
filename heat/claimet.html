@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claimet</title>
+    <link rel="stylesheet" href="claimet.css">
+</head>
+<body>
+    <div class="bg" id="mydiv">
+        <h1 id="clname">hello</h1>
+        <div class="container">
+            <table cellspacing="10px" cellpadding="5px" style="border: 1px solid black;">
+                <tr>
+                    <th colspan="2">
+                        <h1>Convertor</h1>
+                        <hr>
+                    </th>
+                </tr> 
+                <tr>
+                    <th>
+                        faherenheit
+                    </th>
+                    <th>
+                        Celcius
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="text" id="d1">
+                    </th>
+                    <th>
+                        <input type="text" id="d2">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="reset" value="Reset" onclick="reset()" class="reset">
+                    </th>
+                    <th>
+                        <input type="button" value="Convert" onclick="result()" class="convert">
+                    </th>
+                </tr>    
+            </table>
+        </div>
+    </div>
+    <script>
+        function result()
+        {
+            let x = document.getElementById("d1").value
+            y = (x-32)*(5/9)
+            document.getElementById("d2").value = Math.round(y)
+            if(y<=22)
+            {
+                document.getElementById("mydiv").style.backgroundImage = "url('https://media.tenor.com/GQO_PZDHaR8AAAAC/snow-white.gif')"
+                document.getElementById('clname').innerHTML= "Chill"
+                document.getElementById('clname').style.color = "skyblue"
+            }
+            else if(y<=28)
+            {
+                document.getElementById("mydiv").style.backgroundImage = "url('https://thumbs.gfycat.com/HonoredSomberCock-size_restricted.gif')"
+                document.getElementById('clname').innerHTML= "Normal Heit"
+                document.getElementById('clname').style.color = "white"
+            }
+            else if(y>=34)
+            {
+                document.getElementById("mydiv").style.backgroundImage = "url('https://cutewallpaper.org/27/campfire-wallpaper-gif/30-amazing-fire-animated-gif.gif')"
+                document.getElementById('clname').innerHTML= "Heit"
+                document.getElementById('clname').style.color = "orange"
+            }
+        }
+        function reset()
+        {
+            document.getElementById("d1").value=''
+            document.getElementById("d2").value=''
+
+        }
+    </script>
+</body>
+</html>

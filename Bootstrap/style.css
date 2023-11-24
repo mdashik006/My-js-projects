@@ -1,0 +1,38 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    background-color: #333333;
+}
+.navbar
+{
+    margin-top:-10px;
+}
+.container-fluid
+{
+    background-image: url("file:///C:/Users/ELCOT/Downloads/stacked-waves-haikei.png");
+    height: 70px;
+}
+.navbar-brand
+{
+    font-size: 32px;
+}
+.nav-item
+{
+    
+    color: aliceblue;
+    font-size: 18px;
+    margin-left: 50px;
+}
+.collapse
+{
+    margin-left: 200px;
+}
+.nav-link
+{
+    font-weight: 800px;
+    color: aliceblue;
+}

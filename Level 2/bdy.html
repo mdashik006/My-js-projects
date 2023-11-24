@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="bdy.css">
+</head>
+<body>
+    <div class="container">
+        <table cellspacing="50px">
+            <tr>
+                <th colspan="2" id="heading">
+                    Calculate Every Thing
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <table cellspacing="20px" class="table1">
+                        <tr>
+                            <th colspan="3">
+                                Your Date Of Birth
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                <hr>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Date
+                            </th>
+                            <th>
+                                Month
+                            </th>
+                            <th>
+                                Year
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="date" placeholder="date">
+                            </td>
+                            <td>
+                                <input type="text" id="month" placeholder="month">
+                            </td>
+                            <td>
+                                <input type="text" id="year" placeholder="year">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table cellspacing="20px" class="table2">
+                        <tr>
+                            <th colspan="3">
+                                Current Date
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">
+                                <hr>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Date
+                            </th>
+                            <th>
+                                Month
+                            </th>
+                            <th>
+                                Year
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="date1" placeholder="date">
+                            </td>
+                            <td>
+                                <input type="text" id="month1" placeholder="month">
+                            </td>
+                            <td>
+                                <input type="text" id="year1" placeholder="year">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Submit" id="submit" onclick="ans()">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container2">
+        <div class="display">
+            <table cellspacing="10px" class="t3">
+                
+                <tr>
+                    <th>
+                        No of year You Lived
+                    </th>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <p id="yr">
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        No of Month You Lived
+                    </th>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <p id="mth">
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        No of Days You Lived
+                    </th>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <p id="dt">
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        No of hour You Lived
+                    </th>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <p id="hr">
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        No of Minites You Lived
+                    </th>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <p id="min">
+
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Your Age is
+                    </th>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <p id="age">
+
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script>
+        function ans()
+        {
+            let a =Number(document.getElementById('date').value)
+            let b =Number(document.getElementById('month').value)
+            let c =Number(document.getElementById('year').value)
+            let d =Number(document.getElementById('date1').value)
+            let e =Number(document.getElementById('month1').value)
+            let f =Number(document.getElementById('year1').value)
+            g = (c - f)*-1
+            document.getElementById('yr').innerHTML = g
+            document.getElementById('age').innerHTML = g
+            h = g*12
+            document.getElementById('mth').innerHTML = h
+            i = (h/12)*366
+            document.getElementById('dt').innerHTML = i
+            j =  i*24
+            document.getElementById('hr').innerHTML = j
+            h =  j*24
+            document.getElementById('min').innerHTML = h
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="container">
+       <table cellspacing="10px">
+            <tr>
+                <td>
+                    <label>Height</label>
+                </td>
+                <td>
+                    <input type="number"  id="hgt" onchange="h(this.value)" placeholder="cm">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Weight</label>
+                </td>
+                <td>
+                    <input type="number"  id="wgt" onchange="w(this.value)" placeholder="Kg">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Go" id="go" onclick="ans()">
+                </td>
+            </tr>
+       </table> 
+
+    </div>
+    <div class="container2">
+        <table cellspacing="1px" id="t2">
+            <tr>
+                <td rowspan="2">
+                 <h1 style="font-size:60px;color: orange;" id="ww"></h1>   
+                </td>
+                <td>
+                    <p id="up" style="color: rgb(99, 97, 94); font-size: xx-large;">BMI</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="down" style="color:Green; font-size: x-large;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 10px;color: black;">Information</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>0 To 18</p>
+                </td>
+            </tr>
+        </table>
+    <div id="result">
+
+    </div>
+    </div>
+
+<script>
+    function ans()
+    {
+        let x = document.getElementById('hgt').value
+        let y = document.getElementById('wgt').value
+        bmi= x/y*10
+        document.getElementById('ww').innerHTML = Math.round(bmi)
+        
+        if(bmi<18)
+        {
+            document.getElementById('down').innerHTML = "Over Weight"
+            document.getElementById('down').style.color="darkred"
+            document.getElementById('result').style.background="darkred"
+            document.getElementById('result').style.width="280px"
+        }
+        else if(bmi<22)
+        {
+            document.getElementById('down').innerHTML = "Normal"
+            document.getElementById('down').style.color="blue"
+            document.getElementById('result').style.background="blue"
+            document.getElementById('result').style.width="150px"
+        }
+        else if(bmi<25)
+        {
+            document.getElementById('down').innerHTML = "Good"
+            document.getElementById('down').style.color="green"
+            document.getElementById('result').style.background="green"
+            document.getElementById('result').style.width="300px"
+        }
+        else if(bmi<40)
+        {
+            document.getElementById('down').innerHTML = "Under Weight"
+            document.getElementById('down').style.color="darkred"
+            document.getElementById('result').style.background="darkred"
+            document.getElementById('result').style.width="50px"
+        }
+    }
+</script>
+
+</body>
+</html>

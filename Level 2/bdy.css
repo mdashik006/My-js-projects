@@ -1,0 +1,64 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+.container
+{
+    padding-left: 200px;
+    background-color: rgba(120, 44, 143, 0.705);
+}
+.table1
+{
+    background-color: rgb(68, 194, 43);
+    font-size: x-large;
+    color: aliceblue;
+}
+.table2
+{
+    color: white;
+    background-color: rgb(235, 164, 34);
+    font-size: x-large;
+}
+#heading
+{
+    color: aliceblue;
+    font-size: xx-large;
+}
+input
+{
+    width: 100px;
+    height: 30px;
+    font-size: x-large;
+}
+::placeholder
+{
+    text-align: center;
+    font-size: larger;
+    font-size: large;
+}
+.container2
+{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(219, 39, 39);
+}
+.t3
+{
+    margin: auto;
+    color: aliceblue;
+    font-size: larger;
+}
+#submit
+{
+    width: 100%;
+    margin: 0%;
+    height: 100%;
+    font-size: xx-large;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+#submit:hover
+{
+    background-color: rgb(26, 204, 56);
+}
