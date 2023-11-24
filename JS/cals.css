@@ -1,0 +1,51 @@
+*
+{
+    margin: 0%;
+}
+.container
+{
+    width: 410px;
+    background-color:#191919;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin:120px auto auto auto;
+}
+.screen 
+{
+    width: 300px;
+    height: 50px;
+    text-align: end;
+    font-size: xx-large;
+    border: 1px solid navy;
+    
+}
+.clear
+{
+    width: 100px;
+    height:55px;
+    color: aliceblue;
+    background-color: red;
+}
+.button 
+{
+    width: 100px;
+    height: 50px;
+    background-color:#565656;
+    color: snow;
+    font-size: 20px;
+}
+.operator
+{
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    font-size: 20px;
+}
+.equal
+{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(55, 192, 55);
+    font-size: 20px;
+}

@@ -1,0 +1,46 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3
+{
+    font-size: 25px;
+    color: aliceblue;
+}
+.navbar{
+    width: 100%;
+    background-color: rgb(42, 137, 106);
+    padding: 20px;
+    box-sizing: border-box;
+}
+button
+{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.navbar .navbar-item
+{
+    position:absolute;
+    right: 20px;
+    top: 25px;
+    margin-right: 100px;
+}
+.navbar .navbar-item ul li{
+    display: inline;
+    font-size: large;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.navbar .navbar-item ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar .navbar-item ul button:hover{
+    color:rgba(255,255,255,0.5);
+    border: 1px solid wheat;
+}

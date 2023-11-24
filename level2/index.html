@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <table cellpadding="20px">
+            <tr>
+                <th>
+                    Bill No
+                </th>
+                <td>
+                    <input type="text" id="bn">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Customer Name
+                </th>
+                <td>
+                    <input type="text" id="cn">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Product
+                </th>
+                <td>
+                    <input list="browsers" name="browser" id="pn">
+                        <datalist id="browsers">
+                            <option value="poomaxcut85">
+                            <option value="poomaxcut90">
+                            <option value="poomaxcut100">
+                            <option value="coffie powder">
+                            <option value="tea powder">
+                            <option value="ginger">
+                        </datalist>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Quantity
+                </th>
+                <td>
+                    <input type="text" id="qty">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Per Price
+                </th>
+                <td>
+                    <input type="text" id="pp">
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <input type="button" value="New" onclick="reset()" style="background-color: rgb(243, 63, 63);">
+                </th>
+                <td>
+                    <input type="button" value="Finish" onclick="result()" style="background-color:rgb(8, 196, 8);">
+                </td>
+            </tr>
+            
+            <tr>
+                <th>
+                    Total Amount
+                </th>
+                <td>
+                    <input type="text" id="ta" style="background-color: #999999;">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Discount%
+                </th>
+                <td>
+                    <input type="text" id="da" style="background-color: #999999;">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    GST+
+                </th>
+                <td>
+                    <input type="text" id="gst" style="background-color: #999999;">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Final Amount
+                </th>
+                <td>
+                    <input type="text" id="fa" style="background-color: #999999;">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="Generate" onclick="show()" style="background-color: rgb(64, 67, 231);">
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="container2">
+        <table cellspacing="10px" style="border: 1px solid black;">
+            <tr>
+                <td colspan="7" style="text-align:center;">
+                    <ul id="myrow">
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>S:No</p>
+                </td>
+                <td>
+                    <p>PName</p>
+                </td>
+                <td>
+                    <p>Qty</p>
+                </td>
+                <td>
+                    <p>PPrize</p>
+                </td>
+                <td>
+                    <p>Total</p>
+                </td>
+                <td>
+                    <p>Dis%</p>
+                </td>
+                <td>
+                    <p>G.total</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul id="myrow1">
+            
+                    </ul>
+                </td>
+                <td>
+                    <ul id="myrow2">
+
+                    </ul>
+                </td>
+                <td>
+                    <ul id="myrow3">
+
+                    </ul>
+                </td>
+                <td>
+                    <ul id="myrow4">
+
+                    </ul>
+                </td>
+
+                <td>
+                    <ul id="myrow5">
+
+                    </ul>
+                </td>
+
+                <td>
+                    <ul id="myrow6">
+
+                    </ul>
+                </td>
+
+                <td>
+                    <ul id="myrow7">
+
+                    </ul>
+                </td>
+
+                </tr>
+        </table>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>

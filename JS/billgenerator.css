@@ -1,0 +1,32 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+.container
+{
+    float: left;
+    border: 5px solid black;
+    color: snow;
+    font-size: x-large;
+    padding: 10px;
+    width: fit-content;
+    background-color: rgb(35, 99, 99);
+}
+input
+{
+    height: 50px;
+    width:300px;
+    font-size: xx-large;
+}
+.container2
+{
+    margin-left: 650px;
+    border: 5px solid black;
+    color: snow;
+    font-size: x-large;
+    padding: 10px;
+    width:680px;
+    height: 610px;
+    background-color: rgb(35, 99, 99);
+}

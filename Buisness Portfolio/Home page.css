@@ -1,0 +1,125 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar
+{
+    background-color: #222222;
+    width: 100%;
+    height: 100px;
+}
+ul
+{
+    list-style: none;
+    margin: 0px 0px 0px 450px;
+}
+a
+{
+    text-decoration: none;
+    color: wheat;
+}
+#vl
+{
+    border: none;
+    width: 25px;
+    height: 0.5px;
+    transform: rotateZ(90deg);
+    margin-top:60px ;
+    background-color: wheat;
+}
+li
+{
+    font-size: 20px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+button
+{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    
+}
+#active
+{
+    border: 0.5px solid wheat;
+    border-radius: 20px;
+    animation: active 1s;
+}
+@keyframes active
+{
+    0%{
+        transform: translateY(-1000px);
+    }
+  
+}
+
+.container
+{
+    padding:50px 0px 0px 0px ;
+    width: 100%;
+    height: 500px;
+    background-color:#111111;
+}
+.content
+{
+    margin: 0px 0px 0px 190px;
+    background-color: #000000;
+    width: 1000px;
+    height: 450px;
+    border-radius: 100px;
+    animation: content 1s;
+}
+@keyframes content
+{
+    0%{
+        transform: translateY(1000px);
+    }
+    
+}
+h1
+{
+    text-align: center;
+    color: wheat;
+    padding-top: 20px;
+}
+#wvl
+{
+    width: 200px;
+    margin: 0px 0px 0px 400px;
+
+}
+#img1
+{
+    float: left;
+    width: 350px;
+    height: 300px;
+    border-radius: 50px;
+    margin: 25px 0px 0px 50px;
+    animation: img 1s;
+}
+@keyframes img
+{
+    0%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+}
+p
+{
+    color: wheat;
+    padding:100px 0px 0px 450px;
+    font-size: larger;
+}
+#sign
+{
+    color: wheat;
+    padding:40px 0px 0px 750px;
+    font-size: larger;
+}

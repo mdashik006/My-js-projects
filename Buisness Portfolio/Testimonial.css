@@ -1,0 +1,66 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar
+{
+    position: fixed;
+    background-color: #222222;
+    width: 100%;
+    height: 100px;
+}
+ul
+{
+    list-style: none;
+    margin: 0px 0px 0px 450px;
+}
+a
+{
+    text-decoration: none;
+    color: wheat;
+}
+#vl
+{
+    border: none;
+    width: 25px;
+    height: 0.5px;
+    transform: rotateZ(90deg);
+    margin-top:60px ;
+    background-color: wheat;
+}
+li
+{
+    font-size: 20px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+button
+{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    
+}
+#active
+{
+    border: 0.5px solid wheat;
+    border-radius: 20px;
+}
+.container
+{
+    padding:50px 0px 100px 0px ;
+    width: 100%;
+    height: 575px;
+    background-color:#111111;
+}
+.content
+{
+    margin:200px 0px 0px 350px;
+    width: 700px;
+    height: 350px;
+    background-color: aqua;
+}

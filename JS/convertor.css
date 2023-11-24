@@ -1,0 +1,36 @@
+.container
+{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+    background-color: #050505;
+    color: aliceblue;
+    font-size: xx-large;
+    margin: 100px auto auto auto;
+}
+input
+{
+    width: 230px;
+    height: 30px;
+    font-size: x-large;
+}
+table
+{
+    background-color: rgb(23, 53, 80);
+}
+.convert
+{
+    text-align: center;
+    background-color: rgb(25, 221, 25);
+    font-size: x-large;
+    padding: auto;
+    width: 250px;
+    height: 50px;
+}
+
+.reset
+{
+    background-color: rgb(228, 45, 21);
+    font-size: x-large;
+    height: 50px;
+}

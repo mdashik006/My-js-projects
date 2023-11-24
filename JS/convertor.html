@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertor</title>
+    <link rel="stylesheet" href="convertor.css">
+</head>
+<body>
+    <div class="container">
+        <table cellspacing="10px" cellpadding="5px" style="border: 1px solid black;">
+            <tr>
+                <th colspan="2">
+                    <h1>Convertor</h1>
+                    <hr>
+                </th>
+            </tr> 
+            <tr>
+                <th>
+                    Feet
+                </th>
+                <th>
+                    Centemeter
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="text" id="d1">
+                </th>
+                <th>
+                    <input type="text" id="d2">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="reset" value="Reset" onclick="reset()" class="reset">
+                </th>
+                <th>
+                    <input type="button" value="Convert" onclick="result()" class="convert">
+                </th>
+            </tr>    
+        </table>
+    </div>
+
+
+    <script>
+        function result()
+        {
+            let x = document.getElementById("d1").value
+            y = (x*30.48)
+            document.getElementById("d2").value = y
+        }
+        function reset()
+        {
+            document.getElementById("d1").value=''
+            document.getElementById("d2").value=''
+
+        }
+    </script>
+</body>
+</html>
