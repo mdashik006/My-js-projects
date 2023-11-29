@@ -1,0 +1,46 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: salmon;
+}
+.container
+{
+    min-height: 80vh;
+    width: 60%;
+    border: 8px solid #5E3765;
+    margin: 4rem auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 35px rgba(0, 0, 0,0.5);
+    background-image: url("./images/1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+.addon
+{
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+a:hover{
+    background-color: rgb(255, 255, 255);
+    color:#5E3765;
+}
+i
+{
+    font-size:50px;
+    background-color: transparent;
+}
+
