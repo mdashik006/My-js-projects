@@ -1,0 +1,35 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+}
+.container
+{
+    width: 400px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container span
+{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#ampm
+{
+    font-size: 32px;
+    padding: 20px 0px 0px 30px;
+}
+
+
